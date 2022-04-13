@@ -20,7 +20,7 @@ export default function aboutList({ data }: any) {
       <div>
         <h1>All coder</h1>
         {data.map((item: any) => (
-          <Link href={`about/${item.id}`} key={item.id}>
+          <Link href={{ pathname: `/about/${item.id}` }} key={item.id}>
             <a>
               <h3>{item.name}</h3>
             </a>
