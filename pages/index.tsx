@@ -10,11 +10,7 @@ const Home: NextPage = () => {
 
   const GotoAbout = () => {
     router.push({
-      pathname: "/about/[postId]",
-      query: {
-        postId: 123,
-        ref: "scocial",
-      },
+      pathname: "/about",
     });
   };
 
@@ -35,6 +31,14 @@ const Home: NextPage = () => {
           Get started by editing{" "}
           <code className={styles.code}>pages/index.tsx</code>
         </p>
+
+        <div>
+          <Link href="/about">
+            <a>go to about pages</a>
+          </Link>
+
+          <button onClick={GotoAbout}>go to About</button>
+        </div>
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
@@ -64,14 +68,6 @@ const Home: NextPage = () => {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
-        </div>
-
-        <div style={{ marginTop: "50000px" }}>
-          <Link href="/about">
-            <a>go to about pages</a>
-          </Link>
-
-          <button onClick={GotoAbout}>go to About</button>
         </div>
       </main>
 
