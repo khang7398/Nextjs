@@ -18,9 +18,9 @@ export default function aboutList({ data }: any) {
         <meta name="keywords" content="about"></meta>
       </Head>
       <div>
-        <h1>All coder</h1>
+        <h1>All User</h1>
         {data.map((item: any) => (
-          <Link href={`about/${item.id}`} key={item.id}>
+          <Link href={{ pathname: `/about/${item.id}` }} key={item.id}>
             <a>
               <h3>{item.name}</h3>
             </a>
