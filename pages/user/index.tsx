@@ -15,12 +15,12 @@ export default function aboutList({ data }: any) {
   return (
     <>
       <Head>
-        <meta name="keywords" content="about"></meta>
+        <meta name="keywords" content="User"></meta>
       </Head>
       <div>
         <h1>All User</h1>
         {data.map((item: any) => (
-          <Link href={{ pathname: `/about/${item.id}` }} key={item.id}>
+          <Link href={{ pathname: `/user/${item.id}` }} key={item.id}>
             <a>
               <h3>{item.name}</h3>
             </a>
