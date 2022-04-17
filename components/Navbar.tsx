@@ -17,6 +17,9 @@ export default function Navbar() {
         <Link href="/comments/">
           <a>comment</a>
         </Link>
+        <Link href="/weather/">
+          <a>weather</a>
+        </Link>
       </div>
     </nav>
   );
